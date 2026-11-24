@@ -242,16 +242,7 @@ TEST 5
   FAILED : 0 / 5
 
 
-### Synthesis and Implementation
 
-1. Set `matrix_mult_top` as the top module for implementation
-2. Add an XDC constraints file with your clock definition:
-   ```tcl
-   create_clock -period 10.000 -name clk [get_ports clk]
-   ```
-3. Run Synthesis → Run Implementation
-4. Check the **Utilization Report** for LUT, FF, and DSP slice counts
-5. Check the **Timing Summary** for Fmax (Worst Negative Slack)
 ## Parameters
 
 All key parameters are defined at the top of each module and can be overridden at instantiation:
@@ -262,9 +253,4 @@ All key parameters are defined at the top of each module and can be overridden a
 | `ACCUM_WIDTH` | 32 | Bit width of accumulator and output elements |
 | `N` | 4 | Matrix dimension (N×N) |
 
-## Tools
 
-- **Simulator:** Xilinx Vivado xsim (or compatible: iverilog, ModelSim)
-- **Synthesis / Implementation:** Xilinx Vivado 2020.x or later
-- **Language:** Verilog-2001 (fully compatible, no SystemVerilog required)
-- **Target:** Any Xilinx 7-series
