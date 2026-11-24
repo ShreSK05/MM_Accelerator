@@ -1,7 +1,4 @@
-// ============================================================
-// FILE: matrix_mult_top.v  - corrected
-// Top-Level 4x4 Matrix Multiplication Accelerator
-// ============================================================
+
 `timescale 1ns/1ps
 
 module matrix_mult_top #(
