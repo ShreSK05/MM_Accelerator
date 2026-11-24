@@ -1,8 +1,4 @@
-//=====================================================
-// Module: sram_buffer
-// Description: Simple synchronous buffer (4 x 8-bit words)
-// Used to store matrix A or B (2x2 = 4 elements)
-//=====================================================
+
 module sram_buffer #(
     parameter DATA_WIDTH = 8,
     parameter ADDR_WIDTH = 2,   // 2 bits -> 4 locations (00,01,10,11)
