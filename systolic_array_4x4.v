@@ -1,21 +1,4 @@
-// ============================================================
-// FILE: systolic_array_4x4.v  - corrected
-//
-// How this systolic array works:
-//   - On load_data: all a_reg/b_reg are pre-loaded from input flat bus.
-//   - On compute cycles: the MAC units each multiply their local
-//     a_reg × b_reg and accumulate over N=4 cycles.
-//   - For a proper matrix multiply C = A*B:
-//     C[i][j] = sum_k( A[i][k] * B[k][j] )
-//   - Each MAC[i][j] needs to see A[i][0..3] and B[0..3][j] paired.
-//   - We implement this by streaming: on cycle k, MAC[i][j] uses
-//     a_reg = A[i][k] and b_reg = B[k][j].
-//   - A shifts right (k index advances for each cell in row i by
-//     loading A[i][k] from a column shift register).
-//   - B shifts down similarly.
-//   - Implemented here with a "k counter" that selects the column
-//     of A and row of B to feed each MAC cell each cycle.
-// ============================================================
+
 `timescale 1ns/1ps
 
 module systolic_array_4x4 #(
