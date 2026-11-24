@@ -1,9 +1,4 @@
-// ============================================================
-// FILE: input_buffer.v
-// Input Buffer with Dual-Port RAM-like Interface
-// Fixed for Xilinx Vivado (Verilog-2001 compatible)
-// - Removed integer loop inside always reset block
-// ============================================================
+
 `timescale 1ns/1ps
 
 module input_buffer #(
