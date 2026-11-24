@@ -1,9 +1,4 @@
-// ============================================================
-// FILE: fsm_controller.v  - final correct version
-// Compute window = N cycles (one per k-column)
-// Plus 1 pipeline drain cycle (product_r stage)
-// Total COMPUTE state cycles = N+1 = 5 for N=4
-// ============================================================
+
 `timescale 1ns/1ps
 
 module fsm_controller #(
