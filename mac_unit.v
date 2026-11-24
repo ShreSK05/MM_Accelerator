@@ -1,8 +1,4 @@
-// ============================================================
-// FILE: mac_unit.v  - final correct version
-// 2-stage pipeline: stage1=multiply, stage2=accumulate+output
-// With N=4 enable pulses, result is valid on the N-th posedge
-// ============================================================
+
 `timescale 1ns/1ps
 
 module mac_unit #(
