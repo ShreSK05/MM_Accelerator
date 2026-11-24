@@ -1,7 +1,4 @@
-// ============================================================
-// FILE: tb_matrix_mult_top.v  - corrected
-// Testbench for 4x4 Matrix Multiplication Accelerator
-// ============================================================
+
 `timescale 1ns/1ps
 
 module tb();
