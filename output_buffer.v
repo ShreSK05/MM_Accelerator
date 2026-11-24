@@ -1,8 +1,4 @@
-// ============================================================
-// FILE: output_buffer.v
-// Output Buffer with Result Storage and Overflow Flags
-// Fixed for Xilinx Vivado (Verilog-2001 compatible)
-// ============================================================
+
 `timescale 1ns/1ps
 
 module output_buffer #(
