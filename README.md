@@ -75,7 +75,7 @@ Because of this 2-stage pipeline, the COMPUTE phase runs for **N + 1 = 5 cycles*
 
 ### Parallel vs serial comparison
 
-| Metric | Parallel (this design) | Serial equivalent |
+| Metric | Parallel  | Serial equivalent |
 |--------|----------------------|-------------------|
 | Arithmetic ops | 5 cycles (all 16 outputs at once) | 112 cycles (7 ops × 16 outputs) |
 | Load overhead | 16 cycles | 16 cycles |
